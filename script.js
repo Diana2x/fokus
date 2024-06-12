@@ -8,6 +8,13 @@ const btns = document.querySelectorAll(".app__card-button");
 const inputFocusMusic = document.querySelector("#alternar-musica");
 const music = new Audio('./sonidos/luna-rise-part-one.mp3');
 const startBtn = document.querySelector('#start-pause');
+const startSound = new Audio('/sonidos/play.wav');
+const pauseSound = new Audio('/sonidos/pause.mp3');
+const endSound = new Audio('/sonidos/beep.mp3');
+
+startSound.volume = 0.2;
+pauseSound.volume = 0.2;
+endSound.volume = 0.1;
 
 let timePassedInSec = 5;
 let idInterval = null;
@@ -70,8 +77,8 @@ function changeContext(context){
 
 const countdown = () => {
   if(timePassedInSec <= 0){
+    endSound.play();
     restart();
-    alert('Tiempo terminado');
     return
   }
   timePassedInSec -= 1;
@@ -80,8 +87,13 @@ const countdown = () => {
 
 startBtn.addEventListener('click', startPause);
 
+
 function startPause(){
+  if(!idInterval){
+    startSound.play();
+  }
   if(idInterval){
+    pauseSound.play();
     restart();
     return
   }
