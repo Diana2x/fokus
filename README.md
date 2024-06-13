@@ -22,4 +22,4 @@ User-Friendly Interface: Easy to navigate interface with clear visual cues for d
 
 ### Overview:
 
-![Live Demo:](https://imgur.com/LPnIMvS)
+![Live Demo:](/imagenes/appDisplay.png)
