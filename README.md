@@ -1,9 +1,9 @@
-https://fokus-diana.netlify.app/
+
 # 🎯📚 Fokus 🔍🎯
 
 This Pomodoro Timer Application is designed to help you manage your time efficiently using the Pomodoro Technique. The application provides different timers for focused work sessions and short and long breaks. It also includes optional background music to enhance focus and productivity.
 
-Live Version: [Here 👉](https://fokus-diana.netlify.app/)
+Live Version: [👉 Here ](https://fokus-diana.netlify.app/)
 
 ## Features
 Pomodoro Timer: Set a timer for focused work sessions (default 25 minutes).
